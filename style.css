@@ -36,13 +36,16 @@ nav {
 	z-index: 1000;
 	background: black;
 	color: white;
-	justify-content: space-around;
+	justify-content: space-between;
 	/* transition: 1.5s; */
 	align-items: center;
-	border-radius: 2rem;
+	border-radius: 3rem;
 	margin: 1rem 1rem 2rem 1rem;
 
 	
+}
+nav h1{
+	margin-left: 2rem;
 }
 nav ul {
 	display: flex;
@@ -74,11 +77,11 @@ nav ul li a:hover {
 
 .get-started {
 	margin-left: 50px;
-	padding: 5px 20px;
+	padding: 9px 20px;
 	border: 2px solid white;
 	border-radius: 20px;
 	text-decoration: none;
-	
+	margin-right: 2rem;
 	transition: .5s;
 	background-color: white;
 	color: black;
@@ -247,10 +250,11 @@ a, button {
 	font-size: 50px;
 	text-align: center;
 	color: #fff;
-	/* background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/extra/b1.jpg"); */
+	/* background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/extra/bg1.svg"); */
 	background-color: #0c0c0c;
 	background-size: cover;
 	background-attachment: fixed;
+	/* filter: grayscale(); */
 	font-family: cursive;
 	z-index: -9;
 }
@@ -263,8 +267,8 @@ a, button {
 .smbox span {
 	margin: 1%;
 	background: #fff;
-	box-shadow: inset 0px 0px 25px rgba(0,0,0,0.2),
-						0 0 40px rgba(0,0,0,0.3);
+	/* box-shadow: inset 0px 0px 25px rgba(0,0,0,0.2), */
+						/* 0 0 40px rgba(0,0,0,0.3); */
 	border-radius: 10px;
 	padding: 30px 50px;
 	cursor: pointer;
@@ -305,13 +309,14 @@ a, button {
 	width: 550px;
 	padding: 50px 40px;
 	background: #fff;
-	box-shadow: 2px 0 100px rgba(0,0,0,0.3);
-	border-radius: 5px;
+	/* box-shadow: 2px 0 100px rgba(0,0,0,0.3); */
+	border: 2px solid #c9c9c9;
 	text-align: justify;
 	line-height: 22px;
 	opacity: 0;
 	transform: translateX(-100px);
 	transition: 1s ease-in-out;
+	border-radius: 1rem;
 }
 .about-content .side-text-appear {
 	opacity: 1;
@@ -383,12 +388,14 @@ a, button {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/extra/b3.jpg");
+	/* background-image: url("images/extra/bg2.svg"); */
+	/* background-color: #0c0c0c; */
 	background-size: cover;
+	
 	background-attachment: fixed;
 }
 .service-swipe .s-card img {
-	width: 100px;
+	width: 200px;
 }
 .service-swipe a {
 	padding: 0;
@@ -397,19 +404,23 @@ a, button {
 .service-swipe .s-card {
 	display: flex;
 	justify-content: space-around;
+	flex-direction: column;
 	padding: 10px;
 	align-items: center;
 	text-align: center;
 	width: 350px;
-	height: 200px;
-	box-shadow: inset 0 0 20px rgba(255,255,255,0.05),
-					0 0 50px rgba(0,0,0,0.8);
-	border-radius: 5px;
+	height: 300px;
+	/* box-shadow: inset 0 0 20px rgba(255,255,255,0.05),
+					0 0 50px rgba(0,0,0,0.8); */
+	border-radius: 1rem;
+	border: 2px solid #c9c9c9;
 	cursor: pointer;
+	background-color: white;
+	color: black;
 	transition-duration: .5s;
 }
 .service-swipe .s-card p {
-	color: #f2f2f2;
+	color: black;
 	font-size: 1.2em;
 	font-family: 'Open Sans',sans-serif;
 }
@@ -420,7 +431,7 @@ a, button {
 
 /*Contact Us Section*/
 .csec {
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, #151414, #1d1116);
 	background-attachment: fixed; 
 	position: absolute;
 	width: 100%;
@@ -470,7 +481,11 @@ a, button {
 	font-weight: 600;
 }
 .imp {
-	color: red;
+	color: black;
+}
+.unique{
+	font-size: 2rem;
+	margin-bottom: 2rem;
 }
 form textarea {
 	width: 100%;
@@ -485,7 +500,7 @@ form textarea {
 }
 #csubmit {
 	margin-top: 20px; 
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: black;
 	border-radius: 5px;
 	border-style: none;
 	outline: none;
@@ -592,7 +607,7 @@ form textarea {
 .title2 .shortdesc2 {
 	padding: 10px;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
+	font-size: 20px;
 	color: #2E3D49;
 	margin-bottom: 10px;
 }
@@ -600,20 +615,24 @@ form textarea {
 	margin-top: 50px;
 	width: 100%;
 	display: flex;
-	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/extra/b4.jpg");
 	background-size: cover;
+	justify-content: space-evenly;
 	padding: 50px 80px;
-	background-attachment: fixed;
 }
 .feed {
-	width: 800px;
-	height: 400px;
+	width: 45%;
+	height: 80%;
 	position: relative;
 	border-radius: 10px;
 	justify-content: center;
-	box-shadow: inset 0 0 90px rgba(0,0,0,0.6),
-					0 0 80px rgba(0,0,0,0.2);
-	background: rgba(0,0,0,0.4);
+	/* box-shadow: inset 0 0 90px rgba(0,0,0,0.6), */
+					/* 0 0 80px rgba(0,0,0,0.2); */
+	/* background: rgba(0,0,0,0.4); */
+}
+.feedbox img {
+	width: 45%;
+	height: 80%;
+	filter: grayscale();
 }
 .feed form {
 	width: 100%;
@@ -623,38 +642,43 @@ form textarea {
 
 .feed form label {
 	position: absolute;
-	color: #f2f2f2;
-	font-size: 10px;
+	color: black;
+	font-size: 15px;
 	font-weight: 800;
+	
 }
 .feed form input, .feed textarea {
-	padding: 15px;
+	margin-top: 1rem;
+	padding: 10px;
 	border-radius: 5px;
-	box-shadow: inset 0 0 5px lightgray;
-	border: 1px solid rgba(0,0,0,0.2);
+	/* box-shadow: inset 0 0 5px lightgray; */
+	border: 2px solid #c9c9c9;
 	outline: none;
 	color: #2E3D49;
 	background: #fff9;
 	font-weight: 600;
+	
 }
 .feed form input {
 	margin-bottom: 15px;
-	width: 50%;
+	width: 80%;
 }
-.feed form .fname {
+/* .feed form .fname {
 	width: 25%;
-}
+} */
 .feed form textarea {
-	width: 100%;
+	width: 80%;
+
 	height: 100px;
 }
 .feed #csubmit {
 	margin-top: 25px; 
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: black;
 	border-radius: 5px;
 	border-style: none;
 	outline: none;
-	width: 100%;
+	width: 60%;
+
 	padding: 15px 25px;
 	color: #fff;
 	font-size: 12px;
@@ -666,6 +690,7 @@ form textarea {
 	text-align: center;
 	justify-content: center;
 	color: #fff;
+	/* background-color: #0c0c0c; */
 	font-size: 20px;
 	padding: 10px;
 }
@@ -703,7 +728,7 @@ footer .right-col h1{
 footer .border{
 	width: 100px;
 	height: 4px;
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: black;
 	margin: 2px;
 }
 footer .newsletter-form {
@@ -733,7 +758,7 @@ footer .btn {
 	padding: 18px 40px;
 	font-size: 16px;
 	color: #f1f1f1;
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: black;
 	border: none;
 	font-weight: 700;
 	outline: none;
